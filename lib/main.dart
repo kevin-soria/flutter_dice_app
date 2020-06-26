@@ -4,7 +4,7 @@ void main() {
   return runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.orange,
         appBar: AppBar(
           title: Text('Snkr Trades'),
           backgroundColor: Colors.blueGrey,
