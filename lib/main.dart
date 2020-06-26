@@ -7,7 +7,7 @@ void main() {
         backgroundColor: Colors.orange,
         appBar: AppBar(
           title: Text('Snkr Trades'),
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.grey,
         ),
         body: DicePage(),
       ),
