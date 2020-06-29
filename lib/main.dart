@@ -18,6 +18,8 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var shoeroute = '';
+
     return Center(
       child: Row(
         children: <Widget>[
@@ -27,7 +29,7 @@ class DicePage extends StatelessWidget {
               onPressed: () {
                 print("hello left world");
               },
-              child: Image.asset('images/Sneaker-PNG-Image.png'),
+              child: Image.asset('images/$shoeroute'),
             ),
           ),
 //        second way to use asset image:
