@@ -23,17 +23,12 @@ class DicePage extends StatelessWidget {
         children: <Widget>[
           Expanded(
 //         first way to use asset image:
-            child: Padding(
-              padding: const EdgeInsets.all(10.0),
+            child: FlatButton(
               child: Image.asset('images/Sneaker-PNG-Image.png'),
             ),
           ),
 //        second way to use asset image:
-          Expanded(
-              child: Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Image.asset('images/unnamed.png'),
-          )),
+          Expanded(child: Image.asset('images/unnamed.png')),
         ],
       ),
     );
