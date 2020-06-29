@@ -21,10 +21,13 @@ class DicePage extends StatelessWidget {
     return Row(
       children: <Widget>[
         Expanded(
+//         first way to use asset image:
           child: Image(
             image: AssetImage('images/Sneaker-PNG-Image.png'),
           ),
         ),
+//        second way to use asset image:
+        Expanded(child: Image.asset('images/unnamed.png')),
       ],
     );
   }
