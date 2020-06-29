@@ -29,6 +29,7 @@ class DicePage extends StatelessWidget {
               onPressed: () {
                 print("hello left world");
               },
+//              need to add shoe route button change to any of the asset pic in images on pressed
               child: Image.asset('images/$shoeroute'),
             ),
           ),
