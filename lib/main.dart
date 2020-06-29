@@ -18,17 +18,19 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        Expanded(
+    return Center(
+      child: Row(
+        children: <Widget>[
+          Expanded(
 //         first way to use asset image:
-          child: Image(
-            image: AssetImage('images/Sneaker-PNG-Image.png'),
+            child: Image(
+              image: AssetImage('images/Sneaker-PNG-Image.png'),
+            ),
           ),
-        ),
 //        second way to use asset image:
-        Expanded(child: Image.asset('images/unnamed.png')),
-      ],
+          Expanded(child: Image.asset('images/unnamed.png')),
+        ],
+      ),
     );
   }
 }
