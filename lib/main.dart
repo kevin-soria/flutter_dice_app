@@ -28,7 +28,11 @@ class DicePage extends StatelessWidget {
             ),
           ),
 //        second way to use asset image:
-          Expanded(child: Image.asset('images/unnamed.png')),
+          Expanded(
+            child: FlatButton(
+              child: Image.asset('images/unnamed.png'),
+            ),
+          ),
         ],
       ),
     );
