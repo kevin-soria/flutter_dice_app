@@ -24,12 +24,18 @@ class DicePage extends StatelessWidget {
           Expanded(
 //         first way to use asset image:
             child: FlatButton(
+              onPressed: () {
+                print("hello left world");
+              },
               child: Image.asset('images/Sneaker-PNG-Image.png'),
             ),
           ),
 //        second way to use asset image:
           Expanded(
             child: FlatButton(
+              onPressed: () {
+                print("hello right world");
+              },
               child: Image.asset('images/unnamed.png'),
             ),
           ),
