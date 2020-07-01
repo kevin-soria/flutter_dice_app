@@ -16,10 +16,10 @@ void main() {
 }
 
 class DicePage extends StatelessWidget {
+  String shoeroute =
+      'air-jordan-nike-air-max-shoe-sneakers-nike-png-clip-art.png';
   @override
   Widget build(BuildContext context) {
-    var shoeroute = '';
-
     return Center(
       child: Row(
         children: <Widget>[
