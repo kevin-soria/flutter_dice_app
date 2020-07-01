@@ -25,7 +25,10 @@ class _ShoePageState extends State<ShoePage> {
   List<String> urlStrings = [
     'air-jordan-nike-air-max-shoe-sneakers-nike-png-clip-art.png',
     'images/unnamed.png',
-    'Sneaker-PNG-Image.png'
+    'Sneaker-PNG-Image.png',
+    '1',
+    '2',
+    '3'
   ];
   String shoeRoute =
       'air-jordan-nike-air-max-shoe-sneakers-nike-png-clip-art.png';
