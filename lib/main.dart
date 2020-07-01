@@ -22,7 +22,12 @@ class ShoePage extends StatefulWidget {
 }
 
 class _ShoePageState extends State<ShoePage> {
-  String shoeroute =
+  List<String> urlStrings = [
+    'air-jordan-nike-air-max-shoe-sneakers-nike-png-clip-art.png',
+    'images/unnamed.png',
+    'Sneaker-PNG-Image.png'
+  ];
+  String shoeRoute =
       'air-jordan-nike-air-max-shoe-sneakers-nike-png-clip-art.png';
   @override
   Widget build(BuildContext context) {
@@ -34,11 +39,11 @@ class _ShoePageState extends State<ShoePage> {
             child: FlatButton(
               onPressed: () {
                 setState(() {
-                  shoeroute = "Sneaker-PNG-Image.png";
+                  shoeRoute = 'Sneaker-PNG-Image.png';
                 });
               },
 //              need to add shoe route button change to any of the asset pic in images on pressed
-              child: Image.asset('images/$shoeroute'),
+              child: Image.asset('images/$shoeRoute'),
             ),
           ),
 //        second way to use asset image:
