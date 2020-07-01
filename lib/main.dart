@@ -1,3 +1,4 @@
+import 'dart:collection';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,7 +33,9 @@ class _ShoePageState extends State<ShoePage> {
 //         first way to use asset image:
             child: FlatButton(
               onPressed: () {
-                print("hello left world");
+                setState(() {
+                  shoeroute = "Sneaker-PNG-Image.png";
+                });
               },
 //              need to add shoe route button change to any of the asset pic in images on pressed
               child: Image.asset('images/$shoeroute'),
