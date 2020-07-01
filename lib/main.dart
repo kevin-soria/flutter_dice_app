@@ -28,7 +28,7 @@ class _ShoePageState extends State<ShoePage> {
     'Sneaker-PNG-Image.png',
     '16-165473_air-jordan-iv-travis-scott-hd-png-download.png',
     '28-289524_yeezy-350-v3-zebra-hd-png-download.png',
-    '3',
+    '65-652876_sneakers-hd-png-download.png',
   ];
   String shoeRoute =
       'air-jordan-nike-air-max-shoe-sneakers-nike-png-clip-art.png';
