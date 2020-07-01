@@ -9,7 +9,7 @@ void main() {
           title: Text('Snkr Trades'),
           backgroundColor: Colors.grey,
         ),
-        body: DicePage(),
+        body: ShoePage(),
       ),
     ),
   );
@@ -21,13 +21,6 @@ class ShoePage extends StatefulWidget {
 }
 
 class _ShoePageState extends State<ShoePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
-class DicePage extends StatelessWidget {
   String shoeroute =
       'air-jordan-nike-air-max-shoe-sneakers-nike-png-clip-art.png';
   @override
