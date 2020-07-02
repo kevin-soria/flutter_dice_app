@@ -42,8 +42,8 @@ class _ShoePageState extends State<ShoePage> {
             child: FlatButton(
               onPressed: () {
                 setState(() {
-                  shoeRoute = urlStrings[2];
-                  print(urlStrings[2]);
+                  shoeRoute = urlStrings[3];
+//                  print(urlStrings[2]);
                 });
               },
 //              need to add shoe route button change to any of the asset pic in images on pressed
