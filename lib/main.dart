@@ -44,6 +44,10 @@ class _ShoePageState extends State<ShoePage> {
                 setState(() {
                   shoeRoute = 'Sneaker-PNG-Image.png';
                 });
+                setState(() {
+                  shoeRoute =
+                      '16-165473_air-jordan-iv-travis-scott-hd-png-download.png';
+                });
               },
 //              need to add shoe route button change to any of the asset pic in images on pressed
               child: Image.asset('images/$shoeRoute'),
