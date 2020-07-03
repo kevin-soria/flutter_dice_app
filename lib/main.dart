@@ -38,7 +38,7 @@ class _ShoePageState extends State<ShoePage> {
   void funcSwap() {
     int indxno = Random().nextInt(5 + 1);
     if (shoeRoute2 == urlStrings[indxno]) {
-      print("its repeating");
+      print("it repeated");
     } else {
       shoeRoute2 = urlStrings[indxno];
       print(indxno);
