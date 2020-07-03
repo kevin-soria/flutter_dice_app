@@ -32,6 +32,9 @@ class _ShoePageState extends State<ShoePage> {
   ];
   String shoeRoute =
       'air-jordan-nike-air-max-shoe-sneakers-nike-png-clip-art.png';
+
+  String shoeRoute2 = 'Sneaker-PNG-Image.png';
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -42,7 +45,9 @@ class _ShoePageState extends State<ShoePage> {
             child: FlatButton(
               onPressed: () {
                 setState(() {
-                  shoeRoute = urlStrings[Random().nextInt(5)];
+                  int indxno = Random().nextInt(5 + 1);
+                  shoeRoute = urlStrings[indxno];
+//                  print(indxno);
                 });
               },
 //              need to add shoe route button change to any of the asset pic in images on pressed
@@ -53,9 +58,13 @@ class _ShoePageState extends State<ShoePage> {
           Expanded(
             child: FlatButton(
               onPressed: () {
-                print("hello right world");
+                setState(() {
+                  int indxno = Random().nextInt(5 + 1);
+                  shoeRoute2 = urlStrings[indxno];
+//                  print(indxno);
+                });
               },
-              child: Image.asset('images/unnamed.png'),
+              child: Image.asset('images/$shoeRoute2'),
             ),
           ),
         ],
