@@ -1,4 +1,4 @@
-import 'dart:collection';
+import 'dart:math';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -24,7 +24,7 @@ class ShoePage extends StatefulWidget {
 class _ShoePageState extends State<ShoePage> {
   List<String> urlStrings = [
     'air-jordan-nike-air-max-shoe-sneakers-nike-png-clip-art.png',
-    'images/unnamed.png',
+    'unnamed.png',
     'Sneaker-PNG-Image.png',
     '16-165473_air-jordan-iv-travis-scott-hd-png-download.png',
     '28-289524_yeezy-350-v3-zebra-hd-png-download.png',
@@ -42,8 +42,7 @@ class _ShoePageState extends State<ShoePage> {
             child: FlatButton(
               onPressed: () {
                 setState(() {
-//                  shoeRoute = urlStrings;
-                  print(urlStrings);
+                  shoeRoute = urlStrings[Random().nextInt(5)];
                 });
               },
 //              need to add shoe route button change to any of the asset pic in images on pressed
