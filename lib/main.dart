@@ -35,6 +35,17 @@ class _ShoePageState extends State<ShoePage> {
 
   String shoeRoute2 = 'Sneaker-PNG-Image.png';
 
+  void funcSwap() {
+    int indxno = Random().nextInt(5 + 1);
+    if (shoeRoute2 == urlStrings[indxno]) {
+      print("its repeating");
+    } else {
+      shoeRoute2 = urlStrings[indxno];
+      print(indxno);
+    }
+    ;
+  }
+
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -59,9 +70,7 @@ class _ShoePageState extends State<ShoePage> {
             child: FlatButton(
               onPressed: () {
                 setState(() {
-                  int indxno = Random().nextInt(5 + 1);
-                  shoeRoute2 = urlStrings[indxno];
-//                  print(indxno);
+                  funcSwap();
                 });
               },
               child: Image.asset('images/$shoeRoute2'),
